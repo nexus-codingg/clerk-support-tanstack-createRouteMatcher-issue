@@ -23,17 +23,17 @@ function RootComponent() {
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
-    <ClerkProvider>
-      <html>
-        <head>
-          <HeadContent />
-        </head>
-        <body>
+    <html>
+      <head>
+        <HeadContent />
+      </head>
+      <body>
+        <ClerkProvider>
           {children}
-          <TanStackRouterDevtools position="bottom-right" />
           <Scripts />
-        </body>
-      </html>
-    </ClerkProvider>
+          <TanStackRouterDevtools position="bottom-right" />
+        </ClerkProvider>
+      </body>
+    </html>
   )
 }
