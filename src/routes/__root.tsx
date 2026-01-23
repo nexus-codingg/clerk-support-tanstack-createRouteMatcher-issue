@@ -30,9 +30,9 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       <body>
         <ClerkProvider>
           {children}
-          <Scripts />
-          <TanStackRouterDevtools position="bottom-right" />
         </ClerkProvider>
+        <Scripts />
+        <TanStackRouterDevtools position="bottom-right" />
       </body>
     </html>
   )
