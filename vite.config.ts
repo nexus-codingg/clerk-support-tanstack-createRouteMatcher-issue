@@ -15,9 +15,9 @@ export default defineConfig({
     viteReact(),
   ],
   // See https://github.com/TanStack/router/issues/5738
-  resolve: {
-    alias: [
-      { find: 'use-sync-external-store/shim/index.js', replacement: 'react', }
-    ]
-  }
+  // resolve: {
+  //   alias: [
+  //     { find: 'use-sync-external-store/shim/index.js', replacement: 'react', }
+  //   ]
+  // }
 })

@@ -31,8 +31,9 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <ClerkProvider>
           {children}
         </ClerkProvider>
-        <Scripts />
+
         <TanStackRouterDevtools position="bottom-right" />
+        <Scripts />
       </body>
     </html>
   )
